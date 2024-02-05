@@ -1,0 +1,5 @@
+{
+  "dictionaries": ["en_US"],
+  "words": ["edtech", "fintech"],
+  "ignorePaths": ["node_modules"]
+}
