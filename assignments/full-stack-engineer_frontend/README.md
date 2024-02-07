@@ -107,12 +107,16 @@ we don't want you to spend more than 4 hours on this assignment. However far
 along you can get, it's OK, and will serve as a starting point for our live
 interview.
 
-We have created a very simple and lightweight backend [server](./server/) that
-can support the screens above. It's therefore not expected that you build upon
-this sever - However, feel free to modify it in case you feel the need for it.
+We have started the work of a very simple and lightweight backend
+[server](./server/). The server can not yet fully serve the needs of the designs
+yet, so you will probably have to extend some functionality in case you go down
+that route. The position is a full stack engineer and we therefore expect you to
+be able to work on the backend as well.
 
-You can choose to focus just on the UI, testing or even spend all your time on a
-kick-ass project setup. Your call.
+With that being said you can choose to focus on a few elements. This is your
+change to show off your skills, so whether that's implementing a killer UI,
+setting up a strong state management system or even spend all your time on a
+kick-ass project setup, it will be a valid solution.
 
 To reiterate, _we prefer_ for you to focus on just a few things and do them very
 well, so you can show us your skill ceiling.
@@ -128,7 +132,12 @@ reviewing your assignment.
   - How are components organized? How are responsibilities split among them? Do
     components have a clear API?
   - What state management patterns are used?
-  - How does the app communicate with the server?
+- Backend:
+  - How are the entities and operations exposed by the API modelled? Is the API
+    documented?
+  - Does the backend follow some architectural pattern? How are responsibilities
+    split among the various parts of the codebase?
+  - How is the database structured? How is it accessed?
 - General:
   - Is naming consistent throughout the project? How about files and folders
     structure?
