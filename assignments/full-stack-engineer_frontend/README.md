@@ -70,7 +70,7 @@ information:
 
 Let's also analyze the courses page in more detail.
 
-![](./images/courses-page-explained.png)
+![](./images/course-page-explained.png)
 
 1. The top half of the page shows a list of courses the user has started, but
    not completed.
