@@ -1,8 +1,6 @@
 import { BookmarkRepo } from "../core/requirements/BookmarkRepo";
-import { CourseProgressRepo } from "../core/requirements/CourseProgressRepo";
 import { CourseRepo } from "../core/requirements/CourseRepo";
 import { MockBookmarkRepo } from "./MockBookmarkRepo";
-import { MockCourseProgressRepo } from "./MockCourseProgressRepo";
 import { MockCourseRepo } from "./MockCourseRepo";
 import { randImg } from "@ngneat/falso";
 
@@ -91,22 +89,12 @@ const initialCourses = [
   },
 ];
 
-const initialCourseProgresses = [
-  {
-    courseId: "courseId0",
-    userId: "userId",
-    progress: 0.45,
-  },
-];
-
 export class MockRepos {
   bookmarks: BookmarkRepo;
   courses: CourseRepo;
-  courseProgresses: CourseProgressRepo;
 
   constructor() {
     this.bookmarks = new MockBookmarkRepo();
     this.courses = new MockCourseRepo(initialCourses);
-    this.courseProgresses = new MockCourseProgressRepo(initialCourseProgresses);
   }
 }

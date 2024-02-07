@@ -11,19 +11,4 @@ export class MockBookmarkRepo implements BookmarkRepo {
     );
     return bookmarks;
   }
-
-  async bookmarkCourse(courseId: string, userId: string): Promise<void> {
-    const newBookmark: CourseBookmark = {
-      courseId,
-      userId,
-    };
-
-    const bookmarks: CourseBookmark[] = [...this.bookmarks];
-    const isBookmarked = bookmarks.find(
-      (bookmark) => bookmark.courseId === courseId
-    );
-    if (isBookmarked) return;
-
-    this.bookmarks.push(newBookmark);
-  }
 }

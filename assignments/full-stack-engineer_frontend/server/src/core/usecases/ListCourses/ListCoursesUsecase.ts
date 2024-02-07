@@ -1,13 +1,9 @@
-import { CourseProgressRepo } from "../../requirements/CourseProgressRepo";
 import { CourseRepo } from "../../requirements/CourseRepo";
 
 export class ListCoursesUsecase {
-  constructor(
-    private courseRepo: CourseRepo,
-    private courseProgressRepo: CourseProgressRepo
-  ) {}
+  constructor(private courseRepo: CourseRepo) {}
 
-  exec = async (userId: string) => {
+  exec = async () => {
     const courses = await this.courseRepo.listCourses();
 
     const coursesWithDuration = courses.map((course) => {
@@ -18,17 +14,6 @@ export class ListCoursesUsecase {
       return { ...course, duration };
     });
 
-    const courseProgresses =
-      await this.courseProgressRepo.listCourseProgressesByUserId(userId);
-
-    return coursesWithDuration.map((course) => {
-      const courseProgress = courseProgresses.find(
-        (courseProgress) => courseProgress.courseId === course.id
-      );
-      return {
-        ...course,
-        progress: courseProgress?.progress || 0,
-      };
-    });
+    return coursesWithDuration;
   };
 }
