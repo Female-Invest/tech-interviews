@@ -7,6 +7,7 @@ The app should:
 
 - Be written in TypeScript.
 - Use React Native.
+- Use Node.js for the backend.
 
 Other than that, you're free to choose whatever tools and libraries you prefer.
 
