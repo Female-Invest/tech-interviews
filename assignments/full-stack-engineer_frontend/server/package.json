@@ -6,8 +6,6 @@
   "scripts": {
     "clean": "rm -rf build",
     "build": "yarn clean && tsc",
-    "test": "jest --verbose",
-    "watch": "tsc -w",
     "start": "node build/index.js"
   },
   "author": "",
