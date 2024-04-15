@@ -136,14 +136,6 @@ that route. However, since this is a case in which we will mostly evaluate your 
 you to extend the server-side functionalities.
 Therefore, any missing endpoints can be mocked on the frontend if you're more comfortable with that.
 
-With that being said you can choose to focus on a few elements. This is your
-change to show off your skills, so whether that's implementing a killer UI,
-setting up a strong state management system or even spend all your time on a
-kick-ass project setup, it will be a valid solution.
-
-To reiterate, _we prefer_ for you to focus on just a few things and do them very
-well, so you can show us your skill ceiling.
-
 ### Evaluation criteria
 
 The scope of the task is broad and our evaluation criteria vary based on what
@@ -159,8 +151,3 @@ reviewing your assignment.
     - Is naming consistent throughout the project? How about files and folders
       structure?
     - Are things tested? How?
-
-Again, we don't expect your solution to be perfect on all the above aspects. On
-the contrary. It's completely normal if, for example, you tell us _"I only
-implemented a single screen of the mobile app, and instead put all my effort on
-the configuration and testing of the project."_.
